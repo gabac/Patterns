@@ -6,7 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import ch.hszt.mdp.decorator.impl.Vodka;
-import ch.hszt.mdp.decorator.impl.VodkaRedBull;
+import ch.hszt.mdp.decorator.impl.RedBull;
 
 public class DecoratorTest {
 	Drink drink;
@@ -23,7 +23,7 @@ public class DecoratorTest {
 	
 	@Test
 	public void vodkaRedBull() {
-		drink = new VodkaRedBull(drink);
+		drink = new RedBull(drink);
 		
 		assertEquals("Vodka, RedBull", drink.getZutat());
 	}
